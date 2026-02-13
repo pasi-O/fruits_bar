@@ -17,6 +17,5 @@ def home():
     return render_template("index.html",fruits=result)
 
 
-
 if __name__ == "__main__":
     app.run(debug=True)
