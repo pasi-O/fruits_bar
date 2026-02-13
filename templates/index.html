@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> My Flask App</title>
+    <link rel="stylesheet" href ="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div>
+       <form class="search-bar" method="GET" action="/">
+    <input
+        type="text"
+        name="q"
+        placeholder="Search fruits..."
+        value="{{ request.args.get('q', '') }}"
+    >
+    <button type="submit">Search</button>
+</form>
+
+    </div>
+   <main class="card-container">
+      {% for fruit in fruits %}
+           <div class="card">
+               <h3>{{fruit}}</h3>
+               <p id="description">{{fruits[fruit]}}</p>
+           </div>
+       {% endfor %}
+
+   </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
