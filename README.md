@@ -3,6 +3,8 @@
 A simple and friendly Flask web application that displays fun fruit facts using clean, minimal fruit cards. The app includes a search bar that lets users filter fruits by name, making it easy to explore the collection. All fruit data is stored in a Python dictionary, keeping the project lightweight and easy to extend.
 
 ---
+## Live Demo Here
+https://fruits-bar.onrender.com
 
 ## ✨ Features
 
