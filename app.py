@@ -1,4 +1,3 @@
-import csrf
 from flask import Flask, render_template, request
 from data.fruits import fruit_facts
 app = Flask(__name__)
